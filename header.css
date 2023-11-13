@@ -7,10 +7,9 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background-image: url("bg.png");
+    background-image: url("back.png");
     background-size: cover;
     background-position: center;
-    padding: 10px 8%;
 }
 .menu_bar{
     background-color:#f8b6ba ;
@@ -22,7 +21,7 @@
     padding: 0 5%;
 }
 .logo{
-    width: 180px;
+    width: 150px;
     cursor: pointer;
 }
 nav ul{
@@ -55,6 +54,7 @@ nav ul li a{
 }
 .content{
     margin-top: 14%;
+    margin-left: 50px;
     color: #fff9f8;
     max-width: 620px;
     font-size: 60;
