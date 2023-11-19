@@ -1,18 +1,13 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
-	background-image: 	url("bg.png");
+	background-image: 	url(bg.png);
   	background-position: center;
   	background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
 }
 .container {
     width: 300px;
-  	height: 550px;
+  	height: 500px;
     margin: 0 auto;
     padding:30px;
     background-color: #fff8f8;
@@ -41,6 +36,19 @@ input[type="password"] {
     border: 1px solid #ccc;
     border-radius: 40px;
 }
+.forget-pass {
+  	margin-bottom : 15px;
+    text-align: right;
+}
+
+.forget-pass a{
+	font-size: 0.80em;
+    color: #e79699;
+}
+
+.forget-pass a:hover {
+  	text-decoration: underline;
+}
 button  {
     width: 100%;
     padding: 10px;
@@ -49,6 +57,9 @@ button  {
     border: none;
     border-radius: 40px;
     cursor: pointer;
+}
+button a{
+    color: #fff;
 }
 button:hover {
     background-color: #ffeeee;
