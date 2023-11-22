@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="font-awesome-5/css/fontawesome-all.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Merienda:wght@500&family=Playball&family=Signika+Negative&family=Source+Serif+4:ital,opsz,wght@1,8..60,600&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             *{
                 margin: 0;
@@ -50,12 +51,10 @@
                 text-decoration: none;
                 font-size: 20px;
             }
-
-
             /*About*/
             .About{ 
                 background-color: #ffeaec;
-                height: 35vh;
+                height: 250px;
                 margin-bottom: 20px;
             }  
             .About .title{
@@ -65,25 +64,36 @@
                 margin-top: 10px;
             }
             .About .title p{
-                max-width: 900px;
+                width: 900px;
                 font-size: 30px;
                 color: #5a5656;
                 padding-top: 1rem;
                 font-family: 'Playball';
                 margin-top: 25px;
             }
-            .About .title h3{
+            @media only screen and (max-width: 768px) {
+                .About {
+                background-color: #ffeaec;
+                height: auto;  
+                margin-bottom: 20px;
+                }
+
+            .About .title {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+                }
+
+            .About .title p {
+                max-width: 100%; 
+                font-size: 20px;  
                 color: #5a5656;
-                font-size: 30px;
-                border: 1px solid #FFF;
+                padding: 1rem;  
+                font-family: 'Playball';
+                margin-top: 15px;  
+                }
             }
-            .About .classesContent{
-                padding: 2rem 4%;
-                justify-content: space-between;
-                padding-top: 100px;
-            }
-
-
              /*Custom*/
             .custom{
                 background-image: url(bgcustom.jpg);
@@ -96,20 +106,14 @@
                 padding: 30px 50px;
                 background-color: #fcd9dacb;
                 display: flex;
+                flex-direction: row;
                 align-items: center;
                 justify-content: center;
                 border: 1px solid #f8b6ba;
             }
-
             .custom h5{
                 font-size: 55px;
                 color: #5a5656;
-                justify-content: start;
-            }
-            .custom .col:nth-child(1){
-                font-size: 10px;
-                display: flex;
-                justify-content: end;
             }
             .custom button{
                 padding: 20px 20px;
@@ -117,9 +121,18 @@
                 color: #5a5656;
                 border: none;
                 border-radius: 20px;
-                margin-left: 100px;
                 width: 150px;
                 height: 65px;
+                margin-top: 10px;
+                margin-left: 100px;
+            }
+            @media only screen and (max-width: 768px) {
+                .custom .customcontent{
+                    flex-direction: column;
+                }
+                .custom button{
+                    margin-left: 0;
+                }
             }
 
 
@@ -127,14 +140,15 @@
             .Collection{
                 background-color: #fcd9da;
                 color: #5a5656;
-                padding: 4rem 4%;
+                margin-top: 30px;
             }
 
             .Collection .title{
                 font-size: 30px;
                 text-align: center;
+                border: 2px solid white;
+                padding: 10px;
             }
-
             .Collection .category{
                 display: flex;
                 justify-content: space-between;
@@ -159,10 +173,10 @@
             }
 
             .categoryContent{
-                margin-top: 20px;
-                padding: 1rem 4%;
+                margin-top: 10px;
+                margin-left: 10px;
+                padding: 50px;
                 display: flex;
-                justify-content: space-between;
                 flex-wrap: wrap;
                 row-gap: 30px;
                 background-color: #fcd9da;
@@ -174,6 +188,7 @@
                 border: 1px solid #FFF;
                 padding: 10px;
                 cursor: pointer;
+                margin-left: 70px;
             }
 
             .categoryContent .cardImg{
@@ -322,22 +337,22 @@
         </style>
     </head>
     <body>
+        <nav>
+            <div class="menu_bar">
+                <img src="logo.png" class="logo">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#collection">Collection</a></li>
+                    <li><a href="#testimony">Testimony</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href=""><i class="fas fa-search"></i></a></li>
+                    <li><a href=""><i class="fas fa-envelope" style="color: #ffffff;"></i></a></li>
+                    <li><a href=""><i class="fas fa-user"></i></a></li>
+                </ul>
+            </div>
+        </nav>
         <div class="Con">
-            <nav>
-                <div class="menu_bar">
-                    <img src="logo.png" class="logo">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#collection">Collection</a></li>
-                        <li><a href="#testimony">Testimony</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href=""><i class="fas fa-search"></i></a></li>
-                        <li><a href=""><i class="fas fa-envelope" style="color: #ffffff;"></i></a></li>
-                        <li><a href=""><i class="fas fa-user"></i></a></li>
-                    </ul>
-                </div>
-            </nav>
             <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
