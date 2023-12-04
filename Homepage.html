@@ -350,6 +350,21 @@
                 font-size: 30px;
                 margin-left: 20px;
             }
+            .search{
+                display: flex;
+                align-items: center;
+            }
+            .search form{
+                display: flex;
+                margin: 0;
+            }
+            .search input{
+                padding: 8px;
+                border: 1px solid rgb(172, 171, 171);
+                outline: none;
+                border-radius: 5px;
+                margin-right: 5px;
+            }
         </style>
     </head>
     <body>
@@ -363,9 +378,15 @@
                         <li><a href="#collection">Collection</a></li>
                         <li><a href="#testimony">Testimony</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <li><div class="search">
+                                <form>
+                                    <input type="text" placeholder="Search here">
+                                </form>
+                            </div>
+                        </li>
                         <li><a href=""><i class="fas fa-search"></i></a></li>
-                        <li><a href=""><i class="fas fa-envelope" style="color: #ffffff;"></i></a></li>
-                        <li><a href=""><i class="fas fa-user"></i></a></li>
+                        <li><a href="chat.html"><i class="fas fa-envelope" style="color: #ffffff;"></i></a></li>
+                        <li><a href="ProfileV2.html"><i class="fas fa-user"></i></a></li>
                     </ul>
                 </div>
             </nav>
